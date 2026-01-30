@@ -1,0 +1,86 @@
+{
+  "_comment": "语音转文本模型配置文件 - 请根据实际需要修改api_key和base_url",
+  "default": {
+    "provider": "openai",
+    "model": "whisper-1"
+  },
+  "models": {
+    "openai": {
+      "description": "OpenAI语音转文本模型",
+      "base_url": "https://api.openai.com/v1",
+      "api_key": "your_openai_stt_api_key",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "OpenAI Whisper 1"
+        }
+      }
+    },
+    "qwen": {
+      "description": "通义千问语音转文本模型",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "your_qwen_stt_api_key",
+      "is_valid": 0,
+      "instances": {
+        "whisper-v1": {
+          "description": "通义千问Whisper V1"
+        }
+      }
+    },
+    "azure": {
+      "description": "Azure语音转文本模型",
+      "base_url": "https://your-region.stt.speech.microsoft.com",
+      "api_key": "your_azure_stt_api_key",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "Azure Whisper 1"
+        }
+      }
+    },
+    "tencent": {
+      "description": "腾讯云语音转文本模型",
+      "base_url": "https://asr.tencentcloudapi.com",
+      "api_key": "{\"tencent_cloud_sid\": \"your_sid\", \"tencent_cloud_sk\": \"your_sk\"}",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "腾讯云Whisper 1"
+        }
+      }
+    },
+    "xinference": {
+      "description": "Xinference语音转文本模型",
+      "base_url": "http://localhost:9997/v1",
+      "api_key": "",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "Xinference Whisper 1"
+        }
+      }
+    },
+    "gpustack": {
+      "description": "GPUStack语音转文本模型",
+      "base_url": "https://api.gpustack.ai/v1",
+      "api_key": "your_gpustack_stt_api_key",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "GPUStack Whisper 1"
+        }
+      }
+    },
+    "gitee": {
+      "description": "GiteeAI语音转文本模型",
+      "base_url": "https://ai.gitee.com/v1/",
+      "api_key": "your_gitee_stt_api_key",
+      "is_valid": 0,
+      "instances": {
+        "whisper-1": {
+          "description": "GiteeAI Whisper 1"
+        }
+      }
+    }
+  }
+}

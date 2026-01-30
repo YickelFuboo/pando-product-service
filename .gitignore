@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+.arts
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.dev
+!.env.example
+
+# Database
+*.db
+*.sqlite3
+
+# AI api-key
+app/config/*.json*
+!app/config/*.json.example
+
+# Project specific
+assistant_snippet_*.txt
+
+# local data
+data/
+
+# Other
+.DS_Store
+Thumbs.db
+
+# Project specific
+config.toml
+!config.template.toml

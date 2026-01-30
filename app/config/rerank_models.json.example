@@ -1,0 +1,147 @@
+{
+  "_comment": "重排序模型配置文件 - 请根据实际需要修改api_key和base_url",
+  "default": {
+    "provider": "baai",
+    "model": "BAAI/bge-reranker-large"
+  },
+  "models": {
+    "baai": {
+      "description": "BAAI重排序模型",
+      "base_url": "",
+      "api_key": "",
+      "is_valid": 0,
+      "instances": {
+        "BAAI/bge-reranker-large": {
+          "description": "BAAI BGE重排序Large"
+        },
+        "BAAI/bge-reranker-base": {
+          "description": "BAAI BGE重排序Base"
+        }
+      }
+    },
+    "jina": {
+      "description": "Jina重排序模型",
+      "base_url": "https://api.jina.ai/v1",
+      "api_key": "your_jina_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "jina-reranker-v1-base-en": {
+          "description": "Jina重排序V1英文基础版"
+        }
+      }
+    },
+    "xinference": {
+      "description": "Xinference重排序模型",
+      "base_url": "http://localhost:9997/v1",
+      "api_key": "",
+      "is_valid": 0,
+      "instances": {
+        "bge-reranker-large": {
+          "description": "Xinference BGE重排序Large"
+        }
+      }
+    },
+    "cohere": {
+      "description": "Cohere重排序模型",
+      "base_url": "https://api.cohere.ai/v1",
+      "api_key": "your_cohere_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-english-v2.0": {
+          "description": "Cohere英文重排序V2.0"
+        },
+        "rerank-multilingual-v2.0": {
+          "description": "Cohere多语言重排序V2.0"
+        }
+      }
+    },
+    "openai_compatible": {
+      "description": "OpenAI兼容重排序模型",
+      "base_url": "https://your-compatible-endpoint.com/v1",
+      "api_key": "your_openai_compatible_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-model": {
+          "description": "OpenAI兼容重排序模型"
+        }
+      }
+    },
+    "qwen": {
+      "description": "通义千问重排序模型",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "your_qwen_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-model": {
+          "description": "通义千问重排序模型"
+        }
+      }
+    },
+    "nvidia": {
+      "description": "NVIDIA重排序模型",
+      "base_url": "https://api.nvcf.nvidia.com/v1",
+      "api_key": "your_nvidia_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "nvidia/rerank-qa-mistral-4b": {
+          "description": "NVIDIA问答重排序Mistral 4B"
+        }
+      }
+    },
+    "voyage": {
+      "description": "Voyage重排序模型",
+      "base_url": "https://api.voyageai.com/v1",
+      "api_key": "your_voyage_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-lite-1": {
+          "description": "Voyage重排序Lite 1"
+        }
+      }
+    },
+    "baidu_yiyan": {
+      "description": "百度文心重排序模型",
+      "base_url": "",
+      "api_key": "{\"yiyan_ak\": \"your_ak\", \"yiyan_sk\": \"your_sk\"}",
+      "is_valid": 0,
+      "instances": {
+        "rerank-model": {
+          "description": "百度文心重排序模型"
+        }
+      }
+    },
+    "huggingface": {
+      "description": "HuggingFace重排序模型",
+      "base_url": "https://api-inference.huggingface.co",
+      "api_key": "your_huggingface_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "cross-encoder/ms-marco-MiniLM-L-6-v2": {
+          "description": "HuggingFace交叉编码器"
+        }
+      }
+    },
+    "gpustack": {
+      "description": "GPUStack重排序模型",
+      "base_url": "https://api.gpustack.ai/v1",
+      "api_key": "your_gpustack_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-model": {
+          "description": "GPUStack重排序模型"
+        }
+      }
+    },
+    "siliconflow": {
+      "description": "SiliconFlow重排序模型",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key": "your_siliconflow_rerank_api_key",
+      "is_valid": 0,
+      "instances": {
+        "rerank-model": {
+          "description": "SiliconFlow重排序模型"
+        }
+      }
+    }
+  }
+}
